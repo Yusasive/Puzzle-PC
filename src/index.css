@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url(/assets/fonts/Satoshi/Satoshi-Variable.ttf);
+}
+
+@font-face {
+  font-family: DM_Sans;
+  src: url(/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@layer base {
+  * {
+    scrollbar-width: none;
+    box-sizing: border-box;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+@layer components {
+  .blur-field {
+    @apply flex justify-between translate-y-56;
+    --shadow-dims: 0 0 384px 192px;
+  }
+
+  .blur-field > div {
+    @apply w-[1px] h-[1px] bg-orange-200;
+  }
+
+  .blur-field > div:nth-child(1) {
+    box-shadow: var(--shadow-dims) rgba(255, 128, 0);
+  }
+
+  .blur-field > div:nth-child(2) {
+    box-shadow: var(--shadow-dims) magenta;
+  }
+
+  .blur-field > div:nth-child(3) {
+    box-shadow: var(--shadow-dims) rgb(14 165 233);
+  }
+}

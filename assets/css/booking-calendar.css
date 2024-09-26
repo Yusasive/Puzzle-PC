@@ -1,0 +1,44 @@
+#calendar3 .fc-daygrid-event {
+    display: none; 
+}
+  
+#calendar3 .fc-daygrid-day {
+    height: 100px; 
+}
+  
+/* #calendar3 .fc-daygrid-body .fc-scrollgrid-sync-table {
+    
+    width: 100% !important; 
+} */
+
+.fc-daygrid-day.fc-day-today {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle-date .fc-daygrid-day-number {
+    border: 2px solid black !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Override min-height for day events */
+#calendar3.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: unset !important;
+}
+
+/* Override height for day cells */
+#calendar3.fc .fc-daygrid-day {
+    height: unset !important;
+}
+
+/* Grey out and make unavailable dates */
+.fc-day.fc-disabled {
+    background-color: #f2f2f2 !important;
+    pointer-events: none;
+}

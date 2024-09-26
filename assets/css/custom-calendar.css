@@ -1,0 +1,38 @@
+#calendar2 .fc-daygrid-event {
+    display: none; 
+}
+  
+#calendar2 .fc-daygrid-day {
+    height: 100px; 
+}
+  
+#calendar2 .fc-daygrid-body .fc-scrollgrid-sync-table {
+    width: 100% !important; 
+}
+
+.fc-daygrid-day.fc-day-today {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle-date .fc-daygrid-day-number{
+    border: 2px solid black !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Override min-height for day events */
+#calendar2.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: unset !important;
+}
+
+/* Override height for day cells */
+#calendar2.fc .fc-daygrid-day {
+    height: unset !important;
+}
+
