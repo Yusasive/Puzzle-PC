@@ -45,16 +45,27 @@ const SaveTimeSection: React.FC = () => {
             </span>
           </div>
 
-          <a href="/" className="text-4xl font-black text-gray-400 hover:bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 hover:bg-clip-text hover:text-transparent py-4">
+          <a
+            href="/"
+            className="text-4xl font-black text-gray-400 hover:bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 hover:bg-clip-text hover:text-transparent py-4">
             Enhance visibility
           </a>
-          <a href="/" className="text-4xl font-black text-gray-400 hover:bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 hover:bg-clip-text hover:text-transparent py-4">
+          <a
+            href="/"
+            className="text-4xl font-black text-gray-400 hover:bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 hover:bg-clip-text hover:text-transparent py-4">
             Automate work
           </a>
         </div>
 
         <div className="flex justify-center items-center bg-gradient-to-r from-blue-600 to-purple-600 mr-[-20px]">
-          <img src={DashboardImg} alt="DashboardImg" className="w-auto h-auto" />
+          <div className=""></div>
+          <div>
+            <img
+              src={DashboardImg}
+              alt="DashboardImg"
+              className="w-auto h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -1,15 +1,11 @@
 import HeroImage from '@/assets/img/hero-section-image.png'
 import Bell from "../icons/bell"
 import BlurField from './blur-field'
-import Navbar from './Navbar'
-import SaveTimeSection from './SaveTimeSection'
-import PerfectFitSection from './PerfectFitSection'
 
 
 const HeroSection = () => {
   return (
     <section className="w-full min-h-[130vh] font-Satoshi flex flex-col items-center gap-y-20 " >
-      <Navbar/>
       <div className="w-fit h-fit flex flex-col justify-center items-center gap-8">
         <h1 className="text-7xl font-extrabold text-purple-950">
           The everything app for work
@@ -35,9 +31,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      
-      <SaveTimeSection/>
-      <PerfectFitSection/>
+
 
 
     </section>
